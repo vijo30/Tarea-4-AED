@@ -1,0 +1,19 @@
+¿Cómo usar la pila en este caso?
+
+Si tengo un int, entonces le agrego el elemento directamente a mi lista de retorno.
+
+Si tengo un list, entonces debo insertar de alguna manera los elementos de la list en la lista de retorno.
+
+Si tengo un tuple, entonces debo insertar el elemento de la primera componente las veces de la segunda componente a la lista de retorno. La primera componente puede ser de los 3 tipos, la segunda, solo un int.
+
+Entonces, ¿cómo uso la pila?
+
+Por como esta construido el input, debo recorrer la lista de principio a fin.
+
+La pila tira los elementos del principio al fondo, de manera que no es fácil de acceder a ellos cuando se desean sacar. Hacer un pop implica eliminar el último elemento insertado, y retornarlo.
+
+Si es un int, no tiene mucho chiste usar la pila.
+
+Si es una lista en cambio, puede ser interesante. IDEA: Tomar la cada elemento de la lista, insertarlo y hacerle pop?
+
+Si es una tuple, entonces inserto tantos elementos en la pila como tantas veces diga la segunda componente, luego, puedo usar otra pila la cua
